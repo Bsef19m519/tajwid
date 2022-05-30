@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tajwid">
         <activity
+            android:name=".LessonActivity2"
+            android:exported="false" />
+        <activity
             android:name=".LessonActivity"
             android:exported="false" />
         <activity
