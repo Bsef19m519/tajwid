@@ -22,4 +22,9 @@ public class LessonActivity extends AppCompatActivity {
         intent.putExtra("letter",letter);
         startActivity(intent);
     }
+    public void backClick(View view){
+        Button b = (Button) view;
+        Intent intent = new Intent(LessonActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
 }
