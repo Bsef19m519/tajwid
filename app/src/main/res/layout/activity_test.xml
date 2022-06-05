@@ -31,7 +31,9 @@
         android:id="@+id/Question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
         android:layout_marginTop="30sp"
+        android:layout_marginRight="10sp"
         android:layout_marginBottom="30sp"
         android:text="TextView"
         android:textAlignment="textStart"
@@ -48,6 +50,8 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
             android:layout_weight="1"
             android:minHeight="48dp"
             android:text="RadioButton"
@@ -57,6 +61,8 @@
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
             android:layout_weight="1"
             android:minHeight="48dp"
             android:text="RadioButton"
@@ -66,6 +72,8 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
             android:layout_weight="1"
             android:minHeight="48dp"
             android:text="RadioButton"
@@ -75,6 +83,8 @@
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
             android:layout_weight="1"
             android:minHeight="48dp"
             android:text="RadioButton"
@@ -92,7 +102,9 @@
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
         android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
         android:layout_marginBottom="20sp"
         android:textAlignment="center"
         android:textStyle="bold" />
@@ -100,7 +112,9 @@
     <TextView
         android:id="@+id/correctAnswer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp" />
 
     <Button
         android:id="@+id/button6"

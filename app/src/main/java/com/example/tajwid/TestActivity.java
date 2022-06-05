@@ -39,7 +39,6 @@ public class TestActivity extends AppCompatActivity {
         Done=findViewById(R.id.button5);
         Next=findViewById(R.id.button6);
         q1();
-        nextSetting();
     }
     private void doneSetting(RadioButton rb){
         Done.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +57,12 @@ public class TestActivity extends AppCompatActivity {
                 }
                 total++;
                 Done.setEnabled(false);
-                radioGroup.setEnabled(false);
+                radioButton.setEnabled(false);
+                radioButton2.setEnabled(false);
+                radioButton3.setEnabled(false);
+                radioButton4.setEnabled(false);
                 Next.setEnabled(true);
+                nextSetting();
             }
         });
     }
@@ -68,8 +71,11 @@ public class TestActivity extends AppCompatActivity {
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                radioGroup.setEnabled(true);
                 Done.setEnabled(true);
+                radioButton.setEnabled(true);
+                radioButton2.setEnabled(true);
+                radioButton3.setEnabled(true);
+                radioButton4.setEnabled(true);
                 if(total==1) q2();
                 else if(total==2) q3();
                 else if(total==3) q4();
