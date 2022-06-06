@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -59,11 +60,9 @@ public class ListViewQuizActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 for(int ind=0;ind<arrayList.size();ind++){
-                    int correct = arrayList.get(ind).getCorrectOption();
-                    //View v=adapter.getView(ind,R.layout.activity_quiz_layout,);
-                    RadioGroup radioGroup=findViewById(R.id.rGroup);
-                    if(correct==radioGroup.getCheckedRadioButtonId()) score++;
+                    if(arrayList.get(ind).isCorrect()) score++;
                 }
                 Intent intent = new Intent(ListViewQuizActivity.this,ResultActivity.class);
                 intent.putExtra("score",score);

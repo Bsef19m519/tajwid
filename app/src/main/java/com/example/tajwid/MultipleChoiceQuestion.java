@@ -8,6 +8,7 @@ public class MultipleChoiceQuestion {
     private String optionC;
     private String optionD;
     private int correctOption;
+    private boolean isCorrect;
 
     public MultipleChoiceQuestion(String title, String question, String optionA, String optionB, String optionC, String optionD, int correctOption) {
         this.title = title;
@@ -17,6 +18,15 @@ public class MultipleChoiceQuestion {
         this.optionC = optionC;
         this.optionD = optionD;
         this.correctOption = correctOption;
+        isCorrect=false;
+    }
+
+    public boolean isCorrect() {
+        return isCorrect;
+    }
+
+    public void setCorrect(boolean correct) {
+        isCorrect = correct;
     }
 
     public String getTitle() {
