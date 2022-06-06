@@ -27,8 +27,8 @@ public class MyListView extends ArrayAdapter<Letter> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Letter letter = getItem(position);
-        LayoutInflater inflater = LayoutInflater.from(getContext());
-        inflater.inflate(R.layout.activity_letter_layout,null,true);
+        convertView = LayoutInflater.from(getContext()).
+        inflate(R.layout.activity_letter_layout,null,true);
 
         ImageView imageView=convertView.findViewById(R.id.letterImage);
         TextView textView=convertView.findViewById(R.id.letterName);
