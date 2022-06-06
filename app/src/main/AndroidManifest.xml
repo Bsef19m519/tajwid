@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tajwid">
         <activity
+            android:name=".ListViewQuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListViewLessonActivity"
             android:exported="false" />
         <activity
